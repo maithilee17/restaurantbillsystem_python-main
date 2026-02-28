@@ -1,171 +1,128 @@
+# 🌐 Restaurant Billing System (Web Version)
 
-# 🧾 Restaurant Billing System (Tkinter + Web)
+A modern and lightweight **Restaurant Billing Web Application** built using **HTML, CSS, JavaScript, and Flask**.  
+This system allows restaurant staff to manage tables, add menu items, and generate bills easily through a clean and responsive interface.
 
-### 🏪 A complete restaurant billing solution with **Tkinter (Desktop)** and **HTML/CSS/JS (Web)** versions
+---
 
-This repository contains **two versions** of a restaurant billing system:
+## 🚀 Features
 
-1. 🖥️ **Desktop App** — built with **Python Tkinter**
-2. 🌐 **Web App** — built with **HTML, CSS, and JavaScript**
-
-Both versions provide an intuitive interface for managing tables, menu items, orders, and customer billing.
+- 🪑 Manage multiple restaurant tables visually  
+- 🍴 Menu categories (Snacks, Starters, Main Course, Desserts, Drinks)  
+- ➕ Add items to table bills instantly  
+- 💰 Automatic calculation of:
+  - Subtotal  
+  - Tax (10%)  
+  - Total (₹)  
+- 🧾 Receipt-style bill generation  
+- 💾 Uses LocalStorage (no database required)  
+- 📱 Responsive and modern UI  
+- ⚡ Fast and lightweight  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Version | Technologies Used |
-|----------|--------------------|
-| 🖥️ Tkinter App | Python 3, Tkinter GUI, Basic Data Structures |
-| 🌐 Web App | HTML5, CSS3, JavaScript (ES6), LocalStorage |
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Python (Flask)
+- LocalStorage
 
 ---
 
 ## 📂 Project Structure
 
 ```
-
-Restaurant_Billing_System/
+Restaurant_BillSystem_Web/
 │
-├── Restaurant_BillSystem_Tkinter/
-│   ├── main.py
-│   ├── menu.json
-│   ├── assets/
-│   └── README.md
-│
-├── Restaurant_BillSystem_Web/
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── app.js
-│   ├── main.py
-│   └── README.md
-│
-└── README.md   ← (this file)
-
-````
-
----
-
-## 💻 1️⃣ Tkinter Version (Desktop Application)
-
-### 🧠 Overview
-The **Tkinter-based Restaurant Billing App** is a simple yet functional desktop GUI that allows restaurant staff to:
-
-- Manage tables and customer orders  
-- Add and calculate menu items dynamically  
-- Generate and print bills  
-- Save order details locally  
-
----
-
-### ⚙️ How to Run
-
-```bash
-cd Restaurant_BillSystem_Tkinter
-python main.py
-````
-
-> 💡 Make sure you have **Python 3.8+** installed.
-
----
-
-### 🎨 Features
-
-* 🪑 Table-wise order system
-* 💰 Auto calculation of subtotal, tax (10%), and total
-* 🍕 Dynamic menu management
-* 🧾 Printable bill area
-* ⚡ Lightweight — no external dependencies
-
----
-
-
-## 🌐 2️⃣ Web Version (Browser Application)
-
-### 🧠 Overview
-
-The **Web version** is a modern, browser-based system built using **HTML, CSS, and JavaScript**.
-It provides a clean, responsive restaurant interface that allows you to manage tables, add menu items, and generate bills — all in one place.
-
----
-
-### ⚙️ How to Run
-
-#### Option 1: Open directly
-
-Simply open `index.html` in your browser.
-
-#### Option 2: Use a local server (Recommended)
-
-```bash
-cd Restaurant_BillSystem_Web
-pip install flask
-python main.py
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── app.js
+├── main.py
+└── README.md
 ```
 
-Then visit:
-👉 [http://localhost:3000](http://localhost:3000)
+---
+
+## ⚙️ How to Run
+
+### Option 1: Open directly (Simplest)
+
+Open the file in your browser:
+
+```
+index.html
+```
 
 ---
 
-### 🎨 Features
+### Option 2: Run using Flask (Recommended)
 
-* 📱 Responsive UI (using **Poppins** font)
-* 🍴 Menu Sections: **Snacks**, **Starters**, **Main Course**, **Desserts**, **Drinks**
-* 🪑 Manage **15 restaurant tables** visually
-* ➕ Add items directly to any table’s bill
-* 💵 Automatic calculation of **Subtotal**, **Tax (10%)**, and **Total (₹)**
-* 🧾 Generate **receipt-style bills** with realistic paper-tear effect
+#### Step 1: Open terminal in project folder
 
----
+```
+cd Restaurant_BillSystem_Web
+```
 
+#### Step 2: Install Flask
 
-## 🧱 Common Features (Both Versions)
+```
+pip install flask
+```
 
-✅ Easy to use — perfect for restaurant billing counters
-✅ Multiple table & order management
-✅ Automatic total and tax calculation
-✅ Simple, fast, and offline-capable
-✅ Modern and visually clean design
-✅ No database or backend required
+#### Step 3: Run the server
 
----
+```
+py -3.13 main.py
+```
 
-## 🧭 Future Enhancements
+#### Step 4: Open browser
 
-* 💾 Save & Load order history
-* 💰 Add discount and GST customization
-* 📊 Manager dashboard for sales overview
-* 🧾 Export/Print bill as PDF
-* 🌙 Add dark mode (Web version)
+```
+http://localhost:3000
+```
 
 ---
 
-## 👨‍💻 Developed By
+## 💡 Advantages
 
-| Name                                              | Role                                 |
-| ------------------------------------------------- | ------------------------------------ |
-| [**maithilee17**](https://github.com/maithilee17) | Developer & Designer                 |
+- No database required  
+- Works offline  
+- Easy to use  
+- Clean and modern UI  
+- Suitable for restaurants, cafes, and demos  
+
+---
+
+## 🔮 Future Enhancements
+
+- Save order history  
+- Export bill as PDF  
+- Sales dashboard  
+- GST customization  
+- Dark mode  
+
+---
+
+## 👨‍💻 Developer
+
+**maithilee17**
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — free for personal and commercial use.
+This project is licensed under the MIT License.
 
 ---
 
 ## ⭐ Support
 
-If you find this project helpful:
+If you find this project useful:
 
-* Give it a ⭐ on GitHub
-* Share it with others who may find it useful
-* Suggest improvements via pull requests
-
----
-
-
-```Thank you```
+- Give it a ⭐ on GitHub  
+- Share it with others  
+- Suggest improvements  
